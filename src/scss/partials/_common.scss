@@ -16,9 +16,11 @@ body {
   font-size: $font_size_default;
 }
 
-.container {
-  width: 75%;
-  margin: auto;
+h4 {
+  font-size: 1.5em;
+  line-height: 1.2em;
+  font-weight: 400;
+  margin: 50px 0;
 }
 
 .btn,
@@ -34,8 +36,7 @@ li .btn {
 
 .btn-primary {
   padding: 10px;
-  background-color: $btn_main_bg;
-  color: $btn_main_text_color;
+  @include btn_colors($btn_main_bg, $btn_main_text_color);
 
   &:hover {
     background-color: $btn_main_bg_hover;
@@ -46,8 +47,7 @@ li .btn {
   border: 1px solid $text_color_default;
 
   &:hover {
-  background-color: $btn_second_bg_hover;
-  color: $btn_second_text_color_hover;
+    @include btn_colors($btn_second_bg_hover, $btn_second_text_color_hover);
   }
 
   &:hover svg path {
@@ -63,4 +63,14 @@ li .btn {
   content: '';
   display: table;
   clear: both;
+}
+
+.container {
+  width: 75%;
+  margin: auto;
+}
+
+.container-large {
+  width: 90%;
+  margin: auto;
 }

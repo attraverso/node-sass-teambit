@@ -1,0 +1,43 @@
+#people-processes {
+  background-color: $bg_color_secondary;
+
+  & .container {
+    padding-top: 50px;
+    padding-bottom: 50px;
+    text-align: center;
+  }
+
+  & .img-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width: 180px;
+
+    & img {
+      height: 100px;
+      width: 140px;
+      margin-bottom: 30px;
+    }
+
+    &.stubborn img {
+      width: auto;
+    }
+  }
+
+  & .img-container-1 {
+    width: 80%;
+    margin: auto;
+    display: flex;
+    justify-content: space-around;
+  }
+
+  & .lower-img {
+    max-width: 280px;
+    margin: 50px 0;
+  }
+
+  & .upper {
+    border-bottom: 1px solid $text_color_default;
+  }
+}
