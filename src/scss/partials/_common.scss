@@ -7,14 +7,17 @@
 
 a {
   color: #30488F;
+  text-decoration: none;
 }
 
 body {
-  color: $font_family;
+  color: $text_color_default;
+  font-family: $font_family;
+  font-size: $font_size_default;
 }
 
 .container {
-  width: 80%;
+  width: 75%;
   margin: auto;
 }
 
@@ -22,11 +25,34 @@ body {
 li .btn {
   padding: 5px 10px;
   border-radius: 5px;
-  border: 1px solid black;
+  font-size: $font_size_btn;
+
+  & svg {
+    margin-right: 5px;
+  }
 }
 
 .btn-primary {
+  padding: 10px;
+  background-color: $btn_main_bg;
+  color: $btn_main_text_color;
 
+  &:hover {
+    background-color: $btn_main_bg_hover;
+  }
+}
+
+.btn-secondary {
+  border: 1px solid $text_color_default;
+
+  &:hover {
+  background-color: $btn_second_bg_hover;
+  color: $btn_second_text_color_hover;
+  }
+
+  &:hover svg path {
+    fill: #fff !important;
+  }
 }
 
 .btn-span {
