@@ -1,0 +1,40 @@
+/*@@@@@@@@@@@@@@@@@@@@ COMMON @@@@@@@@@@@@@@@@@@@@*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a {
+  color: #30488F;
+}
+
+body {
+  color: $font_family;
+}
+
+.container {
+  width: 80%;
+  margin: auto;
+}
+
+.btn,
+li .btn {
+  padding: 5px 10px;
+  border-radius: 5px;
+  border: 1px solid black;
+}
+
+.btn-primary {
+
+}
+
+.btn-span {
+  float: right;
+}
+
+.clearfix {
+  content: '';
+  display: table;
+  clear: both;
+}

@@ -1,0 +1,17 @@
+.jumbotron {
+  margin: 100px 0;
+}
+
+.jumbotron-info {
+  float: left;
+  width: 50%;
+}
+
+.jumbotron-img {
+  float: right;
+  width: 50%;
+
+  & img {
+    width: 100%;
+  }
+}
